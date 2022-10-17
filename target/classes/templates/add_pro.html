@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http:www.w3.org/1999/xhtml" xmlns:th="http:www.thymeleaf.org/">
+<head>
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+</script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+</script>
+<link rel = "stylesheet" href = "https://cdn.datatables.net/1.10.21/css/dataTables.bootstrap4.min.css">
+<script src = "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js">
+</script>
+<script src = "https://cdn.datatables.net/1.10.21/js/dataTables.bootstrap4.min.js">
+</script>
+</head>
+<body>
+
+<h3>Employee form</h3>
+<form action="#" th:action="@{/save1}" th:Object="${employee}" method="post">
+<div class= "form-group">
+Employee Id:
+<input type= "text" th:field="*{id}" class= "form-control" placeholder= "Enter employee Id">
+</div>
+<div class= "form-group">
+FirstName
+<input type= "text" th:field="*{firstName}" class= "form-control" placeholder= "Enter the first Name">
+</div>
+<div class= "form-group">
+LastName
+<input type= "text" th:field="*{lastName}" class= "form-control" placeholder= "Enter the lastname ">
+</div>
+<div class= "form-group">
+salary
+<input type= "text" th:field="*{salary}" class= "form-control" placeholder= "Enter the lastname ">
+</div>
+<div class= "form-group">
+Experience
+<input type= "text" th:field="*{years}" class= "form-control" placeholder= "Enter the lastname ">
+</div>
+<input class="btn btn-primary" type= "submit">
+
+</form>
+</div>
+</body>
+</html>
